@@ -116,7 +116,6 @@ h1 {
 .more {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .more a {
