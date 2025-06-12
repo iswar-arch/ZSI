@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Species Explorer</title>
+  <link rel="stylesheet" href="landing.css" />
+</head>
+<body>
+ <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Species Explorer</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#species">Species</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1 id="typed-text">Welcome to Species Explorer</h1>
+    <p>Discover and explore the fascinating world of Indian fauna</p>
+  </header>
+
+  <!-- Search -->
+  <div class="search-container">
+    <input type="text" id="searchInput" onkeyup="filterCards()" placeholder="Search species by name..." />
+  </div>
+
+  <!-- Species Cards -->
+  <section class="card-container" id="species">
+    <div class="card">
+      <img src="images/img2.jpg" alt="Small Indian Civet" />
+      <h2>Small Indian Civet</h2>
+      <p><i>Viverricula indica</i></p>
+      <a href="Species/Small Indian Civet/index.html">View Details</a>
+    </div>
+    <div class="card">
+      <img src="images/img1.jpg" alt="Asian Palm Civet" />
+      <h2>Asian Palm Civet</h2>
+      <p><i>Paradoxurus hermaphroditus</i></p>
+      <a href="Species/Asian Palm Civet/index.html">View Details</a>
+    </div>
+    <div class="card">
+      <img src="images/img3.jpeg" alt="Staghorn Coral" />
+      <h2>Staghorn Coral</h2>
+      <p><i>Acropora muricata</i></p>
+      <a href="Species/Acropora-muricata/index.html">View Details</a>
+    </div>
+    <div class="card">
+      <img src="images/img4.jpeg" alt="Monocled Cobra" />
+      <h2>Monocled Cobra</h2>
+      <p><i>Naja kaouthia</i></p>
+      <a href="Species/Monocled Cobra/index.html">View Details</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About This Platform</h2>
+    <p>This platform is dedicated to exploring, documenting, and showcasing species found in the Indian subcontinent. It serves as a digital catalog with scientific, ecological, and conservation details for each species. Built with a vision to promote awareness, research, and conservation initiatives.</p>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <h2>Key Features</h2>
+    <ul>
+      <li>🔍 Real-time species search</li>
+      <li>📸 Scientific & local names with photos</li>
+      <li>📚 Habitat and behavior details</li>
+      <li>📊 Interactive charts (coming soon!)</li>
+      <li>📍 Species distribution map (coming soon!)</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@speciesexplorer.in</p>
+    <p>Phone: +91-9876543210</p>
+    <p>Follow us on social media for more updates!</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2023 Species Explorer | Developed by Zoological Survey of India
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
