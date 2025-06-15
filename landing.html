@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Species Explorer</title>
   <link rel="stylesheet" href="landing.css" />
 </head>
+
 <body>
- <!-- Navigation -->
+  <!-- Navigation -->
   <nav class="navbar">
     <div class="logo">Species Explorer</div>
     <ul class="nav-links" id="navLinks">
       <li><a href="#">Home</a></li>
       <li><a href="#species">Species</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#features">Features</a></li>
+      <li><a href="#keyfeatures">Features</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">☰</div>
+
   </nav>
 
   <!-- Hero -->
@@ -62,34 +65,123 @@
   <!-- About -->
   <section class="about" id="about">
     <h2>About This Platform</h2>
-    <p>This platform is dedicated to exploring, documenting, and showcasing species found in the Indian subcontinent. It serves as a digital catalog with scientific, ecological, and conservation details for each species. Built with a vision to promote awareness, research, and conservation initiatives.</p>
+    <p>
+      <strong>Species Explorer</strong> is a digital initiative designed to systematically document and showcase the
+      rich biodiversity of the Indian subcontinent. The platform serves as an interactive repository that provides
+      accurate scientific information, ecological context, and conservation insights for a wide range of native species.
+      <br><br>
+      Developed with the goal of fostering awareness and supporting research, this resource is aimed at students,
+      researchers, conservationists, and nature enthusiasts alike. By bringing together reliable data and intuitive
+      design, Species Explorer contributes to informed conservation efforts and promotes greater understanding of
+      India’s natural heritage.
+    </p>
   </section>
+
 
   <!-- Features -->
-  <section class="features" id="features">
+  <section class="features" id="keyfeatures">
     <h2>Key Features</h2>
-    <ul>
-      <li>🔍 Real-time species search</li>
-      <li>📸 Scientific & local names with photos</li>
-      <li>📚 Habitat and behavior details</li>
-      <li>📊 Interactive charts (coming soon!)</li>
-      <li>📍 Species distribution map (coming soon!)</li>
-    </ul>
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <div class="icon" style="background-color: #ffe5e5;">
+          🐾
+        </div>
+        <h3>Species Information</h3>
+        <p>Descriptive pages for every species from authenticated sources. Help collaborate and build information on
+          species.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon" style="background-color: #eaf4ff;">
+          👁️
+        </div>
+        <h3>Citizen Science</h3>
+        <p>Any member of the general public can upload an observation of any species sighted. Other members help
+          identify and curate observations.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon" style="background-color: #fff7dc;">
+          🗺️
+        </div>
+        <h3>Maps</h3>
+        <p>Interact online with multiple layers of spatial data served through an interactive web-GIS module.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon" style="background-color: #f4eaff;">
+          📖
+        </div>
+        <h3>Biodiversity Literature</h3>
+        <p>Peer-reviewed and grey literature organized with metadata and tags, sourced in partnership with biodiversity
+          journals.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon" style="background-color: #eafff5;">
+          🧬
+        </div>
+        <h3>Taxonomy</h3>
+        <p>Taxonomic information curated by experts, allowing dynamic updates for organizing and querying species data.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon" style="background-color: #eaf0ff;">
+          ⛰️
+        </div>
+        <h3>Landscapes</h3>
+        <p>Detailed information on landscapes, spatial boundaries, species lists, and associated research.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon" style="background-color: #e5fff4;">
+          👥
+        </div>
+        <h3>Communities</h3>
+        <p>Microsites dedicated to various themes, enabling communities to collect, curate, and share content.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon" style="background-color: #ebfff2;">
+          🗃️
+        </div>
+        <h3>Open Data</h3>
+        <p>All content is open under a Creative Commons license, encouraging reuse with attribution to original
+          contributors.</p>
+      </div>
+
+    </div>
   </section>
 
+
   <!-- Contact -->
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@speciesexplorer.in</p>
-    <p>Phone: +91-9876543210</p>
-    <p>Follow us on social media for more updates!</p>
+  <section class="contact-section" id="contact">
+    <h2>CONTACT&nbsp;US</h2>
+
+    <form class="contact-form" action="#" method="post">
+      <input type="text" name="firstName" placeholder="First name" required>
+      <input type="text" name="lastName" placeholder="Last name" required>
+      <input type="tel" name="phone" placeholder="Mobile number" pattern="[0-9]{10}">
+      <input type="email" name="email" placeholder="Email address" required>
+
+      <textarea name="message" rows="6" class="full-width" placeholder="Write your message here…" required></textarea>
+
+      <button type="submit" class="submit-btn">
+        <span class="arrow">&#x21B4;</span><!-- ↴ arrow -->
+        Submit
+      </button>
+    </form>
   </section>
+
 
   <!-- Footer -->
   <footer>
     &copy; 2023 Species Explorer | Developed by Zoological Survey of India
   </footer>
 
-  <script src="script.js"></script>
+  <script src="landing.js"></script>
 </body>
+
 </html>
